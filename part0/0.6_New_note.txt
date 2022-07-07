@@ -1,0 +1,26 @@
+note over browser:
+browser gets new note from user
+then js-code triggers event handler
+(method e.preventDefault() is used
+to prevent a new GET request)
+end note
+
+note over browser:
+the event handler creates,
+adds new note to list
+and re-renders list on the page
+end note
+
+browser->browser: [{ content: "0.6: New note", date: "2021-11-1" }, ...]
+
+note over browser:
+the event handler sends the note as JSON-string to server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+server parses the data
+end note
+
+server-->browser: Response HTTP status code 201 Created

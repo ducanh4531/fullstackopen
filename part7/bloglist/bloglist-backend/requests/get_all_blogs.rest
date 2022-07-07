@@ -1,0 +1,35 @@
+GET http://localhost:3003/api/blogs/
+
+###
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbXJvczEiLCJpZCI6IjYxYzQyM2ZmMGU3NjgxNWI3Yjc3OTg1OSIsImlhdCI6MTY0MDI0NDM2OX0.1S37Z0cI_-MOxKif8OKaUbyX6AmlWfJpVSRHotjBeMg
+
+{
+  "title": "23 DEC",
+	"author": "23 DEC",
+	"url": "23 DEC",
+	"likes": 0
+}
+
+###
+POST http://localhost:3003/api/blogs/622dc30e7010cd9002865b33/comments
+Content-Type: application/json
+
+["a must read for every developer"]
+
+###
+PUT http://localhost:3003/api/blogs/61ba1ea054a9242b122428be
+Content-Type: application/json
+
+{
+  "title": "Fullstack",
+	"author": "rerer",
+	"url": "wwww.fb.com",
+	"likes": 500
+}
+
+###
+DELETE http://localhost:3003/api/blogs/61c426b65faf681365a6101f
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbXJvczEiLCJpZCI6IjYxYzQyM2ZmMGU3NjgxNWI3Yjc3OTg1OSIsImlhdCI6MTY0MDI0NDM2OX0.1S37Z0cI_-MOxKif8OKaUbyX6AmlWfJpVSRHotjBeMg

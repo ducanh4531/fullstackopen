@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Golang",
+      "author": "Golang",
+      "url": "Golang",
+      "likes": 500,
+      "user": null
+    },
+    {
+      "id": 2,
+      "title": "javascript",
+      "author": "javascript",
+      "url": "javascript",
+      "likes": 500,
+      "user": null
+    },
+    {
+      "id": 3,
+      "title": "cplusplus",
+      "author": "cplusplus",
+      "url": "cplusplus",
+      "likes": 0,
+      "user": null
+    }
+  ]
+}
